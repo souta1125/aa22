@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="ja" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Google Fontsの読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="loading" class="is-hide"></div>
+    <div id="FAB">
+      <button type="button" class="btn-filter" id="btn-open-filter"></button>
+    </div>
+    <aside id="filter">
+      <header>
+        <h2>
+          絞り込み
+        </h2>
+      </header>
+      <div class="inner">
+        <ul class="flexBox" id="filterBox">
+          <li>
+            <label for="">
+              <input type="checkbox" name="filter" id="parade">
+              <p class="btn-secondary">
+                パレード
+              </p>
+            </label>
+          </li>
+          <li>
+            <label for="">
+              <input type="checkbox" name="filter" id="stageShow">
+              <p class="btn-secondary">
+                ステージショー
+              </p>
+            </label>
+          </li>
+          <li>
+            <label for="">
+              <input type="checkbox" name="filter" id="castleShow">
+              <p class="btn-secondary">
+                キャッスルショー
+              </p>
+            </label>
+          </li>
+          <li>
+            <label for="">
+              <input type="checkbox" name="filter" id="parkWide">
+              <p class="btn-secondary">
+                パークワイド
+              </p>
+            </label>
+          </li>
+          <li>
+            <label for="">
+              <input type="checkbox" name="filter" id="fireWorks">
+              <p class="btn-secondary">
+                花火
+              </p>
+            </label>
+          </li>
+          <li>
+            <label for="">
+              <input type="checkbox" name="filter" id="entry">
+              <p class="btn-secondary">
+                エントリー受付対象
+              </p>
+            </label>
+          </li>
+          <li>
+            <label for="">
+              <input type="checkbox" name="filter" id="dpa">
+              <p class="btn-secondary">
+                ディズニー・プレミアアクセス対象
+              </p>
+            </label>
+          </li>
+          <li>
+            <label for="">
+              <input type="checkbox" name="filter" id="reserve">
+              <p class="btn-secondary">
+                事前予約が必要
+              </p>
+            </label>
+          </li>
+          <li>
+            <label for="">
+              <input type="checkbox" name="filter" id="rainy">
+              <p class="btn-secondary">
+                雨の日も実施
+              </p>
+            </label>
+          </li>
+          <li>
+            <label for="">
+              <input type="checkbox" name="filter" id="outdoor">
+              <p class="btn-secondary">
+                屋外
+              </p>
+            </label>
+          </li>
+          <li>
+            <label for="">
+              <input type="checkbox" name="filter" id="wheelchair">
+              <p class="btn-secondary">
+                車椅子の方も鑑賞可能
+              </p>
+            </label>
+          </li>
+          <li>
+            <label for="">
+              <input type="checkbox" name="filter" id="assistantDog">
+              <p class="btn-secondary">
+                アシスタントドッグ利用可
+              </p>
+            </label>
+          </li>
+        </ul>
+      </div>
+      <footer>
+        <button type="button" class="btn-secondary">
+          クリア
+        </button>
+        <button type="button" class="btn-primary" id="btn-filter">
+          検索
+        </button>
+      </footer>
+    </aside>
+    <div class="pageContent">
+      <main>
+        <section>
+          <h2>
+            ショー・パレード
+          </h2>
+          <ul class="list-1" id="facilityList">
+            <div class="skeleton" id="listItem">
+              <li class="list-item">
+                <div class="inner">
+                  <div class="imgBox">
+                    <img src="" alt="">
+                  </div>
+                  <div class="txtBox">
+                    <p class="list-item-title">タイトル</p>
+                  </div>
+                </div>
+              </li>
+            </div>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+  </html>

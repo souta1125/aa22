@@ -1,0 +1,112 @@
+#filter {
+  background-color: #fff;
+  border-top-right-radius: 1.6rem;
+  border-top-left-radius: 1.6rem;
+  box-shadow: 0 0 .1rem #333;
+  height: fit-content;
+  width: min(100%, var(--w-pc));
+  max-height: 90%;
+  overflow: hidden auto;
+  padding: 1.6rem 1.6rem calc(3.2rem + env(safe-area-inset-bottom)) 1.6rem;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  transition: transform .3s ease;
+  z-index: 20;
+
+  &.is-open {
+    transform: translate(-50%, 0);
+  }
+
+  header {
+    padding-bottom: 1.6rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 21;
+
+    h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+  .inner {
+    .flexBox {
+      li {
+        label {
+          height: 100%;
+          width: 100%;
+          position: relative;
+
+          input[type="checkbox"] {
+            appearance: none;
+            cursor: pointer;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            &:checked + p {
+              background-color: var(--c-active);
+              color: #fff;
+            }
+          }
+          p {
+            border-color: var(--c-deactive);
+            color: var(--c-deactive);
+          }
+        }
+      }
+    }
+  }
+  footer {
+    button {
+      margin: 1.6rem 0;
+      width: 100%;
+
+      &.btn-primary {
+        background-color: var(--c-active);
+      }
+      &.btn-secondary {
+        border-color: var(--c-active);
+        color: var(--c-active);
+      }
+    }
+  }
+}
+
+#FAB {
+  background-color: var(--c-primary);
+  border-radius: 99rem;
+  height: fit-content;
+  width: fit-content;
+  position: fixed;
+  bottom: calc(1.6rem + env(safe-area-inset-bottom));
+  right: 1.6rem;
+  z-index: 10;
+
+  button {
+    display: block;
+    height: 5.2rem;
+    width: 5.2rem;
+    position: relative;
+
+    &::before {
+      background-image: url("./assets/images/icons/search.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      content: "";
+      display: block;
+      height: 65%;
+      width: 65%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
